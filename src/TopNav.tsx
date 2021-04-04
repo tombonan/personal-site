@@ -4,13 +4,17 @@ import Nav from 'react-bootstrap/Nav';
 
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
-function TopNav() {
+interface Props {
+    navClass: String,
+};
+
+const TopNav: React.FC<Props> = ({ navClass }) => {
   return (
-    <Navbar expand="lg" className="py-4">
+    <Navbar expand="lg" className={`py-4 ${navClass}`}>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="#link">Link</Nav.Link>
           <Nav.Link href="#link">Contact</Nav.Link>
         </Nav>
@@ -25,6 +29,6 @@ function TopNav() {
       </Navbar.Collapse>
     </Navbar>
   );
-}
+};
 
 export default TopNav;
