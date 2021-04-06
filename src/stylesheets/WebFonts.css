@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&display=swap');
+
+/*** Pet Sounds ***/
+
+.font-card {
+    width: 94%;
+    height: 700px;
+}
+
+.pet-sounds {
+    margin: 520px auto 60px;
+    padding-top: 170px;
+    background-color: #548c58;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+}
+
+.bb-text {
+    font-size: 142px;
+    color: #F5E16D;
+    padding: 0;
+    margin-top: -72px;
+    letter-spacing: -6px;
+}
+
+#bb-white {
+    color: #FFF;
+}
+
+/*** Moby Dick ***/
+.moby-dick {
+    margin: 60px auto;
+    padding-top: 70px;
+    text-align: center;
+    background-color: #eee0ce;
+    font-family: 'Old Standard TT', serif;
+    color: #161616;
+}
+
+.title-lg {
+    font-size: 58px;
+    margin-bottom: 60px;
+}
+
+.title-md {
+    font-size: 24px;
+}
+
+.title-sm {
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.title-text-sm {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

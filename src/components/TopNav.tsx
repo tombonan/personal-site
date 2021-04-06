@@ -10,11 +10,12 @@ interface Props {
 
 const TopNav: React.FC<Props> = ({ navClass }) => {
   return (
-    <Navbar expand="lg" className={`py-4 ${navClass}`}>
+    <Navbar expand="lg" fixed="top" className={`py-3 ${navClass}`}>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/recipes">Recipes</Nav.Link>
           <Nav.Link href="/fonts">Web Fonts</Nav.Link>
           <Nav.Link href="mailto:pressinquiries@tombonan.me">Contact</Nav.Link>
         </Nav>
