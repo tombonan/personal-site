@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+import TopNav from './TopNav';
+import Home from './Home';
+import Recipes from './Recipes';
 import './App.css';
 
+// Pages with custom navbar backgrounds
+const customNav = ['recipes'];
+
 function App() {
+  const navClass = () => {
+    const loc = window.location.pathname.replace('/', '');
+    return customNav.includes(loc) ? `nav-${loc}` : 'nav-default';
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <TopNav navClass={navClass()}/>
+        <div>
+          <Switch>
+            <Route exact path="/"><Home /></Route>
+            <Route exact path="/recipes"><Recipes /></Route>
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }
