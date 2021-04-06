@@ -5,9 +5,9 @@ import {
   Route
 } from "react-router-dom";
 
-import TopNav from './TopNav';
-import Home from './Home';
-import Recipes from './Recipes';
+import TopNav from './components/TopNav';
+import Home from './components/Home';
+import Recipes from './components/Recipes';
 import './App.css';
 
 // Pages with custom navbar backgrounds
