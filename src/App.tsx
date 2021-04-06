@@ -8,6 +8,7 @@ import {
 import TopNav from './components/TopNav';
 import Home from './components/Home';
 import Recipes from './components/Recipes';
+import WebFonts from './components/WebFonts';
 import './App.css';
 
 // Pages with custom navbar backgrounds
@@ -27,6 +28,7 @@ function App() {
           <Switch>
             <Route exact path="/"><Home /></Route>
             <Route exact path="/recipes"><Recipes /></Route>
+            <Route exact path="/fonts"><WebFonts /></Route>
           </Switch>
         </div>
       </Router>
