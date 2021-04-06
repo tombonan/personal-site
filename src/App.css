@@ -1,7 +1,7 @@
 /*** Global ***/
 @font-face {
   font-family: 'Biotif';
-  src: local('Biotif'), url(./fonts/Biotif.ttf) format('truetype');
+  src: local('Biotif'), url(./fonts/Biotif-Regular.ttf) format('truetype');
 }
 
 @font-face {
