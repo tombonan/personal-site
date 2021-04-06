@@ -6,13 +6,18 @@ import {
 } from "react-router-dom";
 
 import TopNav from './components/TopNav';
+
+// Page components
 import Home from './components/Home';
 import Recipes from './components/Recipes';
 import WebFonts from './components/WebFonts';
+
+// Stylesheets
 import './App.css';
+import './stylesheets/WebFonts.css';
 
 // Pages with custom navbar backgrounds
-const customNav = ['recipes'];
+const customNav = ['recipes', 'fonts'];
 
 function App() {
   const navClass = () => {

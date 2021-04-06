@@ -24,6 +24,10 @@ body {
     background-color: #ffeaee;
 }
 
+.nav-fonts {
+    background-color: #ffeec4;
+}
+
 .navbar-nav {
     padding-left: 20px;
     padding-right: 20px;
@@ -45,8 +49,7 @@ body {
 
 /*** Global ***/
 .page-container {
-    padding-left: 60px;
-    padding-top: 200px;
+    padding: 300px 60px 0px 60px;
 }
 
 .landing-text {
@@ -66,5 +69,10 @@ body {
 /*** Recipes ***/
 .recipes-container {
     background: linear-gradient(6deg, #dacdff 1%, rgba(218,205,255,0) 47%),#ffeaee;
+    height: 60vw;
+}
+
+.fonts-container {
+    background: linear-gradient(350deg,#f8c6ff -6%,rgba(255,196,255,0) 60%),#ffeec4;
     height: 60vw;
 }
