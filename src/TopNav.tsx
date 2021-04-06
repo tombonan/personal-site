@@ -15,8 +15,8 @@ const TopNav: React.FC<Props> = ({ navClass }) => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <Nav.Link href="#link">Contact</Nav.Link>
+          <Nav.Link href="/fonts">Web Fonts</Nav.Link>
+          <Nav.Link href="mailto:pressinquiries@tombonan.me">Contact</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link onClick={()=> window.open("https://github.com/tombonan", "_blank")}>
