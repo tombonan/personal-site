@@ -4,6 +4,11 @@
   src: local('Biotif'), url(./fonts/Biotif-Regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Bogart';
+  src: local('Biotif'), url(./fonts/Bogart-Regular.ttf) format('truetype');
+}
+
 body {
     background-color: #fefaf6;
     color: #242320;
@@ -25,7 +30,7 @@ body {
 }
 
 .navbar-nav > a{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-left:36px;
     margin-right:36px;
 }
@@ -36,6 +41,24 @@ body {
 
 .nav-icon {
     width: 16px;
+}
+
+/*** Global ***/
+.page-container {
+    padding-left: 60px;
+    padding-top: 200px;
+}
+
+.landing-text {
+    color: #242320;
+    font-size: 70px;
+    font-family: "Bogart";
+}
+
+.landing-desc {
+    color: #656370;
+    font-size: 18px;
+    font-family: "Biotif";
 }
 
 /*** Home ***/
