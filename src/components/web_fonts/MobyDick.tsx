@@ -9,7 +9,7 @@ function MobyDick() {
       <h5 className="title-sm">BY</h5>
       <h5 className="title-md">HERMAN MELVILLE,</h5>
       <h5 className="title-text-sm">AUTHOR OF</h5>
-      <h5 className="title-text-sm">"TYPEE," "OMOO," "REDBURN," "MARDI," "WHITE JACKET."</h5>
+      <h5 className="title-text-sm">“TYPEE,” “OMOO,” “REDBURN,” “MARDI,” “WHITE JACKET.”</h5>
     </div>
   );
 }

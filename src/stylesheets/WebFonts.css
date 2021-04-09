@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 /*** Pet Sounds ***/
 .font-card {
@@ -55,4 +58,70 @@
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+/*** Western ***/
+.western {
+    background-color: #CC0000;
+    margin: 60px auto;
+    padding-top: 200px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    color: #161616;
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-underline-position: from-font;
+    letter-spacing: -4px;
+}
+
+.western h1 {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+#w-yellow {
+    color: #FEAF1A;
+}
+
+/*** Conrad Quote ***/
+.conrad {
+    margin: 60px auto;
+    padding-top: 200px;
+    font-family: 'Alegreya', serif;
+    background-color: #5eaaa8;
+    color: #fff;
+    /* color: #161616; */
+    font-size: 33px;
+    line-height: 40px;
+}
+
+#conrad-wrapper {
+    margin: 0 auto;
+    width: 64%;
+}
+
+/*** John McPhee ***/
+.mcphee {
+    margin: 60px auto;
+    padding-top: 200px;
+    font-family: 'Special Elite', cursive;
+    color: #161616;
+    background-color: #f2e9da;
+    font-size: 28px;
+    line-height: 36px;
+    hyphens: auto;
+}
+
+#mcphee-wrapper {
+    margin: 0 auto;
+    width: 94%;
+}
+
+.mcphee-credit {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#mcphee-title {
+    color: #C90707;
 }

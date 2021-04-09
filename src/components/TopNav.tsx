@@ -5,8 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 interface Props {
-    navClass: String,
-};
+    navClass: string,
+}
 
 const TopNav: React.FC<Props> = ({ navClass }) => {
   return (
