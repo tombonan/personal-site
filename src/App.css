@@ -64,12 +64,26 @@ body {
     font-family: "Biotif";
 }
 
-/*** Home ***/
+.landing-desc a {
+    color: #242320;
+    text-decoration: none;
+}
 
-/*** Recipes ***/
-.recipes-container {
+.landing-desc a:hover {
+    color: #656270;
+}
+
+/*** Page-specific containers ***/
+.recipes-container, .contact-container {
     background: linear-gradient(6deg, #dacdff 1%, rgba(218,205,255,0) 47%),#ffeaee;
+}
+
+.recipes-container {
     height: 60vw;
+}
+
+.contact-container {
+    height: 100vh;
 }
 
 .fonts-container {
