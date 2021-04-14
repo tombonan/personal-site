@@ -11,13 +11,14 @@ import TopNav from './components/TopNav';
 import Home from './components/Home';
 import Recipes from './components/Recipes';
 import WebFonts from './components/WebFonts';
+import Contact from './components/Contact';
 
 // Stylesheets
 import './App.css';
 import './stylesheets/WebFonts.css';
 
 // Pages with custom navbar backgrounds
-const customNav = ['recipes', 'fonts'];
+const customNav = ['recipes', 'fonts', 'contact'];
 
 function App() {
   const navClass = () => {
@@ -33,6 +34,7 @@ function App() {
           <Switch>
             <Route exact path="/"><Home /></Route>
             <Route exact path="/recipes"><Recipes /></Route>
+            <Route exact path="/contact"><Contact /></Route>
             <Route exact path="/fonts"><WebFonts /></Route>
           </Switch>
         </div>
