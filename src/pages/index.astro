@@ -1,0 +1,183 @@
+---
+
+---
+
+<html lang="en">
+        <head>
+                <meta charset="utf-8" />
+                <link rel="icon" href="/favicon.ico" />
+                <meta name="viewport" content="width=device-width" />
+                <meta name="generator" content={Astro.generator} />
+                <title>Tom Bonan</title>
+        </head>
+        <body>
+                <div class="container">
+                        <h1>Tom Bonan</h1>
+                        <div class="numbers">
+                                <div class="row">
+                                        <span class="number white">Q</span>
+                                        <span class="number">W</span>
+                                        <span class="number">E</span>
+                                        <span class="number">R</span>
+                                        <span class="number">T</span>
+                                        <span class="number">Y</span>
+                                        <span class="number">U</span>
+                                        <span class="number">I</span>
+                                        <span class="number">P</span>
+                                </div>
+                                <div class="row staggered">
+                                        <span class="number">A</span>
+                                        <span class="number">S</span>
+                                        <span class="number">D</span>
+                                        <span class="number">F</span>
+                                        <span class="number">G</span>
+                                        <span class="number">H</span>
+                                        <span class="number">J</span>
+                                        <span class="number">K</span>
+                                        <span class="number">L</span>
+                                </div>
+                                <div class="row">
+                                        <span class="number">Z</span>
+                                        <span class="number">X</span>
+                                        <span class="number">C</span>
+                                        <span class="number">V</span>
+                                        <span class="number">B</span>
+                                        <span class="number">N</span>
+                                        <span class="number">M</span>
+                                        <span class="number">,</span>
+                                        <span class="number">.</span>
+                                </div>
+                        </div>
+                </div>
+        </body>
+</html>
+
+<style>
+        @font-face {
+                font-family: 'Gill Kayo';
+                src: url('/fonts/Gill Kayo Condensed Regular.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+        }
+
+        html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+        }
+
+        body {
+                background-color: #c9784a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Gill Kayo', sans-serif;
+        }
+
+        .container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 2rem;
+        }
+
+        h1 {
+                color: #363636;
+                font-weight: normal;
+                margin: 0;
+                padding: 0;
+                font-size: 9rem;
+                line-height: 0.9;
+                letter-spacing: 0.2rem;
+        }
+
+        .intro {
+                color: #363636;
+                margin: 1.5rem 0;
+                font-size: 1rem;
+        }
+
+        .intro-label {
+                font-size: 0.7rem;
+                letter-spacing: 0.1em;
+        }
+
+        .intro em {
+                font-style: italic;
+        }
+
+        .numbers {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                gap: 0.4rem;
+                margin-top: 3rem;
+        }
+
+        .row {
+                display: flex;
+                gap: 0.4rem;
+        }
+
+        .row.staggered {
+                margin-left: 1.8rem;
+        }
+
+        .number {
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 50%;
+                background-color: #363636;
+                color: #c9784a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.4rem;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                cursor: pointer;
+        }
+
+        .number:hover {
+                background-color: #e8e8e8;
+                color: #363636;
+        }
+
+        .number.white {
+                background-color: #e8e8e8;
+                color: #363636;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 480px) {
+                .container {
+                        padding: 1.5rem;
+                        margin-top: -1rem;
+                }
+
+                h1 {
+                        font-size: 4rem;
+                        letter-spacing: 0.1rem;
+                }
+
+                .numbers {
+                        margin-top: 4rem;
+                        gap: 0.3rem;
+                }
+
+                .row {
+                        gap: 0.3rem;
+                }
+
+                .row.staggered {
+                        margin-left: 1.1rem;
+                }
+
+                .number {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        font-size: 1rem;
+                }
+        }
+</style>
